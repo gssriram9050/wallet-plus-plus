@@ -1,0 +1,45 @@
+1
+Asha Raman
+9876543210
+asha@example.com
+1
+Ravi Kumar
+9123456780
+ravi@example.com
+2
+U101
+2
+U102
+3
+W1001
+5000
+1
+Y
+3
+W1001
+100
+2
+N
+4
+W1001
+W1002
+2000
+4
+W1002
+W1001
+3000
+5
+W1002
+Campus Cafe
+450
+6
+W1002
+PAY1004
+6
+W1002
+PAY1004
+7
+W1001
+7
+W1002
+8

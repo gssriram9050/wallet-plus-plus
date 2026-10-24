@@ -1,0 +1,419 @@
+
+==============================================
+          WALLET++ - DIGITAL WALLET
+==============================================
+  1. Add User
+  2. Create Wallet
+  3. Top-up
+  4. Transfer
+  5. Pay Merchant
+  6. Refund
+  7. View Statement
+  8. Exit
+----------------------------------------------
+Enter your choice (1-8): 
+--- Add User ---
+Enter name: Enter 10-digit phone number: Enter email: 
+User added successfully.
+User ID         : U101
+Name            : Asha Raman
+Phone           : 9876543210
+Email           : asha@example.com
+
+==============================================
+          WALLET++ - DIGITAL WALLET
+==============================================
+  1. Add User
+  2. Create Wallet
+  3. Top-up
+  4. Transfer
+  5. Pay Merchant
+  6. Refund
+  7. View Statement
+  8. Exit
+----------------------------------------------
+Enter your choice (1-8): 
+--- Add User ---
+Enter name: Enter 10-digit phone number: Enter email: 
+User added successfully.
+User ID         : U102
+Name            : Ravi Kumar
+Phone           : 9123456780
+Email           : ravi@example.com
+
+==============================================
+          WALLET++ - DIGITAL WALLET
+==============================================
+  1. Add User
+  2. Create Wallet
+  3. Top-up
+  4. Transfer
+  5. Pay Merchant
+  6. Refund
+  7. View Statement
+  8. Exit
+----------------------------------------------
+Enter your choice (1-8): 
+--- Create Wallet ---
+Users without a wallet:
+  U101 - Asha Raman
+  U102 - Ravi Kumar
+Enter User ID (for example U101): 
+Wallet created successfully.
+Wallet ID       : W1001
+Owner           : Asha Raman
+Balance         : Rs. 0.00
+
+==============================================
+          WALLET++ - DIGITAL WALLET
+==============================================
+  1. Add User
+  2. Create Wallet
+  3. Top-up
+  4. Transfer
+  5. Pay Merchant
+  6. Refund
+  7. View Statement
+  8. Exit
+----------------------------------------------
+Enter your choice (1-8): 
+--- Create Wallet ---
+Users without a wallet:
+  U102 - Ravi Kumar
+Enter User ID (for example U101): 
+Wallet created successfully.
+Wallet ID       : W1002
+Owner           : Ravi Kumar
+Balance         : Rs. 0.00
+
+==============================================
+          WALLET++ - DIGITAL WALLET
+==============================================
+  1. Add User
+  2. Create Wallet
+  3. Top-up
+  4. Transfer
+  5. Pay Merchant
+  6. Refund
+  7. View Statement
+  8. Exit
+----------------------------------------------
+Enter your choice (1-8): 
+--- Top-up ---
+Available wallets:
+  W1001 - Asha Raman  (Balance: Rs. 0.00)
+  W1002 - Ravi Kumar  (Balance: Rs. 0.00)
+Enter Wallet ID: Enter top-up amount (Rs.): Payment source:
+  1. UPI
+  2. Debit Card
+  3. Net Banking
+Choose source (1-3): 
+You are about to add Rs. 5,000.00 to wallet W1001 (Asha Raman) using UPI.
+Confirm top-up? (Y/N): 
+========================================================
+                     TOP-UP RECEIPT
+========================================================
+Transaction ID  : TOP1001
+Type            : TOP-UP
+Date & Time     : 24-10-2026 12:04:11
+Status          : SUCCESS
+--------------------------------------------------------
+Wallet          : W1001 (Asha Raman)
+Payment Source  : UPI
+Amount Added    : Rs. 5,000.00
+Fee             : Rs. 0.00
+New Balance     : Rs. 5,000.00
+--------------------------------------------------------
+              Thank you for using Wallet++
+========================================================
+
+==============================================
+          WALLET++ - DIGITAL WALLET
+==============================================
+  1. Add User
+  2. Create Wallet
+  3. Top-up
+  4. Transfer
+  5. Pay Merchant
+  6. Refund
+  7. View Statement
+  8. Exit
+----------------------------------------------
+Enter your choice (1-8): 
+--- Top-up ---
+Available wallets:
+  W1001 - Asha Raman  (Balance: Rs. 5,000.00)
+  W1002 - Ravi Kumar  (Balance: Rs. 0.00)
+Enter Wallet ID: Enter top-up amount (Rs.): Payment source:
+  1. UPI
+  2. Debit Card
+  3. Net Banking
+Choose source (1-3): 
+You are about to add Rs. 100.00 to wallet W1001 (Asha Raman) using Debit Card.
+Confirm top-up? (Y/N): 
+Top-up cancelled. No money was added.
+
+==============================================
+          WALLET++ - DIGITAL WALLET
+==============================================
+  1. Add User
+  2. Create Wallet
+  3. Top-up
+  4. Transfer
+  5. Pay Merchant
+  6. Refund
+  7. View Statement
+  8. Exit
+----------------------------------------------
+Enter your choice (1-8): 
+--- Transfer ---
+Available wallets:
+  W1001 - Asha Raman  (Balance: Rs. 5,000.00)
+  W1002 - Ravi Kumar  (Balance: Rs. 0.00)
+Fee rule: transfers up to Rs. 1,000.00 are free; above that a 1% fee is charged to the sender.
+Enter SOURCE Wallet ID: Enter DESTINATION Wallet ID: Enter transfer amount (Rs.): 
+========================================================
+                    TRANSFER RECEIPT
+========================================================
+Transaction ID  : TRF1003
+Type            : TRANSFER
+Date & Time     : 24-10-2026 12:04:11
+Status          : SUCCESS
+--------------------------------------------------------
+From Wallet     : W1001 (Asha Raman)
+To Wallet       : W1002 (Ravi Kumar)
+Amount          : Rs. 2,000.00
+Fee             : Rs. 20.00
+Total Debited   : Rs. 2,020.00
+Sender Balance  : Rs. 2,980.00
+Receiver Balance: Rs. 2,000.00
+--------------------------------------------------------
+              Thank you for using Wallet++
+========================================================
+
+==============================================
+          WALLET++ - DIGITAL WALLET
+==============================================
+  1. Add User
+  2. Create Wallet
+  3. Top-up
+  4. Transfer
+  5. Pay Merchant
+  6. Refund
+  7. View Statement
+  8. Exit
+----------------------------------------------
+Enter your choice (1-8): 
+--- Transfer ---
+Available wallets:
+  W1001 - Asha Raman  (Balance: Rs. 2,980.00)
+  W1002 - Ravi Kumar  (Balance: Rs. 2,000.00)
+Fee rule: transfers up to Rs. 1,000.00 are free; above that a 1% fee is charged to the sender.
+Enter SOURCE Wallet ID: Enter DESTINATION Wallet ID: Enter transfer amount (Rs.): 
+  [ERROR] Insufficient funds in wallet W1002. Available: Rs. 2,000.00, required: Rs. 3,030.00 (amount Rs. 3,000.00 + fee Rs. 30.00).
+
+==============================================
+          WALLET++ - DIGITAL WALLET
+==============================================
+  1. Add User
+  2. Create Wallet
+  3. Top-up
+  4. Transfer
+  5. Pay Merchant
+  6. Refund
+  7. View Statement
+  8. Exit
+----------------------------------------------
+Enter your choice (1-8): 
+--- Pay Merchant ---
+Available wallets:
+  W1001 - Asha Raman  (Balance: Rs. 2,980.00)
+  W1002 - Ravi Kumar  (Balance: Rs. 2,000.00)
+Enter Wallet ID: Enter merchant name: Enter payment amount (Rs.): 
+========================================================
+                    PAYMENT RECEIPT
+========================================================
+Transaction ID  : PAY1004
+Type            : PAYMENT
+Date & Time     : 24-10-2026 12:04:11
+Status          : SUCCESS
+--------------------------------------------------------
+Wallet          : W1002 (Ravi Kumar)
+Merchant        : Campus Cafe
+Amount Paid     : Rs. 450.00
+Fee             : Rs. 0.00
+New Balance     : Rs. 1,550.00
+--------------------------------------------------------
+              Thank you for using Wallet++
+========================================================
+
+==============================================
+          WALLET++ - DIGITAL WALLET
+==============================================
+  1. Add User
+  2. Create Wallet
+  3. Top-up
+  4. Transfer
+  5. Pay Merchant
+  6. Refund
+  7. View Statement
+  8. Exit
+----------------------------------------------
+Enter your choice (1-8): 
+--- Refund ---
+Available wallets:
+  W1001 - Asha Raman  (Balance: Rs. 2,980.00)
+  W1002 - Ravi Kumar  (Balance: Rs. 1,550.00)
+Enter Wallet ID: Payments made from this wallet:
+  PAY1004 | Campus Cafe | Rs. 450.00 | refundable
+Enter Payment ID to refund (for example PAY1004): 
+========================================================
+                     REFUND RECEIPT
+========================================================
+Transaction ID  : REF1005
+Type            : REFUND
+Date & Time     : 24-10-2026 12:04:11
+Status          : SUCCESS
+--------------------------------------------------------
+Wallet          : W1002 (Ravi Kumar)
+Original Payment: PAY1004
+Merchant        : Campus Cafe
+Refund Amount   : Rs. 450.00
+Fee             : Rs. 0.00
+New Balance     : Rs. 2,000.00
+--------------------------------------------------------
+              Thank you for using Wallet++
+========================================================
+
+==============================================
+          WALLET++ - DIGITAL WALLET
+==============================================
+  1. Add User
+  2. Create Wallet
+  3. Top-up
+  4. Transfer
+  5. Pay Merchant
+  6. Refund
+  7. View Statement
+  8. Exit
+----------------------------------------------
+Enter your choice (1-8): 
+--- Refund ---
+Available wallets:
+  W1001 - Asha Raman  (Balance: Rs. 2,980.00)
+  W1002 - Ravi Kumar  (Balance: Rs. 2,000.00)
+Enter Wallet ID: Payments made from this wallet:
+  PAY1004 | Campus Cafe | Rs. 450.00 | REFUNDED
+Enter Payment ID to refund (for example PAY1004): 
+  [ERROR] Payment PAY1004 has already been refunded.
+
+==============================================
+          WALLET++ - DIGITAL WALLET
+==============================================
+  1. Add User
+  2. Create Wallet
+  3. Top-up
+  4. Transfer
+  5. Pay Merchant
+  6. Refund
+  7. View Statement
+  8. Exit
+----------------------------------------------
+Enter your choice (1-8): 
+--- View Statement ---
+Available wallets:
+  W1001 - Asha Raman  (Balance: Rs. 2,980.00)
+  W1002 - Ravi Kumar  (Balance: Rs. 2,000.00)
+Enter Wallet ID: 
+=================================================================================================================
+                                                WALLET STATEMENT
+=================================================================================================================
+Wallet          : W1001 (Asha Raman)
+Generated On    : 24-10-2026 12:04:11
+-----------------------------------------------------------------------------------------------------------------
+No  Date & Time       Txn ID   Type         Description                           Credit       Debit      Balance
+-----------------------------------------------------------------------------------------------------------------
+1   24-10-26 12:04:11 TOP1001  TOP-UP       Top-up via UPI                      5,000.00           -     5,000.00
+2   24-10-26 12:04:11 TRF1003  TRANSFER OUT Transfer to W1002 (Ravi Kumar)             -    2,000.00     3,000.00
+3   24-10-26 12:04:11 TRF1003  FEE          Transfer fee                               -       20.00     2,980.00
+-----------------------------------------------------------------------------------------------------------------
+Total Credits   : Rs. 5,000.00
+Total Debits    : Rs. 2,020.00
+Closing Balance : Rs. 2,980.00
+=================================================================================================================
+
+==============================================
+          WALLET++ - DIGITAL WALLET
+==============================================
+  1. Add User
+  2. Create Wallet
+  3. Top-up
+  4. Transfer
+  5. Pay Merchant
+  6. Refund
+  7. View Statement
+  8. Exit
+----------------------------------------------
+Enter your choice (1-8): 
+--- View Statement ---
+Available wallets:
+  W1001 - Asha Raman  (Balance: Rs. 2,980.00)
+  W1002 - Ravi Kumar  (Balance: Rs. 2,000.00)
+Enter Wallet ID: 
+=================================================================================================================
+                                                WALLET STATEMENT
+=================================================================================================================
+Wallet          : W1002 (Ravi Kumar)
+Generated On    : 24-10-2026 12:04:11
+-----------------------------------------------------------------------------------------------------------------
+No  Date & Time       Txn ID   Type         Description                           Credit       Debit      Balance
+-----------------------------------------------------------------------------------------------------------------
+1   24-10-26 12:04:11 TRF1003  TRANSFER IN  Transfer from W1001 (Asha Raman)    2,000.00           -     2,000.00
+2   24-10-26 12:04:11 PAY1004  PAYMENT      Paid to Campus Cafe                        -      450.00     1,550.00
+3   24-10-26 12:04:11 REF1005  REFUND       Refund of PAY1004 (Campus Cafe)       450.00           -     2,000.00
+-----------------------------------------------------------------------------------------------------------------
+Total Credits   : Rs. 2,450.00
+Total Debits    : Rs. 450.00
+Closing Balance : Rs. 2,000.00
+=================================================================================================================
+
+==============================================
+          WALLET++ - DIGITAL WALLET
+==============================================
+  1. Add User
+  2. Create Wallet
+  3. Top-up
+  4. Transfer
+  5. Pay Merchant
+  6. Refund
+  7. View Statement
+  8. Exit
+----------------------------------------------
+Enter your choice (1-8):   [INVALID INPUT] Please enter a number between 1 and 8.
+Enter your choice (1-8):   [INVALID INPUT] Please enter a number between 1 and 8.
+Enter your choice (1-8): 
+--- Add User ---
+Enter name:   [INVALID INPUT] Name must be 2-30 characters long and contain only letters, spaces, '.', '-' or an apostrophe.
+Enter name: Enter 10-digit phone number:   [INVALID INPUT] Phone number must be 10 digits and start with 6, 7, 8 or 9.
+Enter 10-digit phone number: Enter email:   [INVALID INPUT] Enter a valid email address (for example name@example.com).
+Enter email: 
+User added successfully.
+User ID         : U103
+Name            : Meena Iyer
+Phone           : 9000000002
+Email           : meena@example.com
+
+==============================================
+          WALLET++ - DIGITAL WALLET
+==============================================
+  1. Add User
+  2. Create Wallet
+  3. Top-up
+  4. Transfer
+  5. Pay Merchant
+  6. Refund
+  7. View Statement
+  8. Exit
+----------------------------------------------
+Enter your choice (1-8): 
+Thank you for using Wallet++. Goodbye!

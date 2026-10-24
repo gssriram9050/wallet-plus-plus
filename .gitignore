@@ -1,0 +1,20 @@
+# Compiled output
+out/
+bin/
+*.class
+
+# IDE settings (the Eclipse .project and .classpath files ARE kept on purpose)
+.settings/
+.idea/
+*.iml
+.vscode/
+nbproject/
+
+# Operating system files
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Logs and temporary files
+*.log
+*.tmp
